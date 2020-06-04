@@ -1,0 +1,339 @@
+<html>
+
+<head>
+   <title>CarSU Online Shop</title>
+    <link rel="shortcut icon" href="images/icons/CarSuLogo.png" />
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    <link href="fa/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="subheader">
+                <div class="container">
+                      <p>Caraga State University Online Shopping Place</p>
+                    <a href="#">Guest</a><a href="#">Consumer</a><a href="#">Download App</a><a href="#">Help</a>
+                </div>
+            </div>
+            <!--==main header==-->
+            <div id="main-header">
+                <!--logo-->
+                <div id="logo">
+                     <a href="#"><img id = "img-logo" src="./images/Logo.png"></a> 
+                </div>
+                <!--==search area==-->
+                <div id="search">
+                    <form action="searcharea.html" method="get" name="frmSearch">
+                        <input id = "searchbox" class="search-area" type="text" name="text" placeholder="Search here">
+                        <input id = "searchbtn" class="search-btn" type="submit" name="submit" onclick="mysearch()">
+                    </form>
+                </div>
+                <!--==user-menu==-->
+                <div id="user-menu">
+                    <li><a onclick="document.getElementById('id011').style.display='block'" style="width:auto;">Cart</a></li>
+                    <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
+                </div>
+            </div>
+        </div>
+        <!----=====navigation bar==--->
+        <div id="navigation">
+           <a href="#" class="menu-togglr"><i class="fa fa-bars"></i></a>
+            <nav id="mainav">
+                <a  id = "highlight" href="index.html">Home</a>
+                <a href="NewArrivals.html">New arrivals</a>
+                <a href="Deals.html">Deals</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="Men.html">Men's Fashion</a>
+                <a href="Women.html">Women's Fashion</a>
+
+                 <nav class="media-icons">
+                <a onclick="window.open('http://www.facebook.com/page')"><img src="images/icons/facebook.png"></li></a>
+                <a onclick="window.open('http://www.twitter.com/page')"><img src="images/icons/twitter.png"></li></a>
+                <a onclick="window.open('http://www.skype.com/page')"><img src="images/icons/skype.png"></li></a>
+                </nav>
+
+            </nav>
+        </div>
+
+         <!--= Login Overlay=-->
+        <div id="id01" class="modal">
+  
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imglogocontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="./images/Logo.png" alt="Avatar" class="avatar">
+            </div>
+             <p id="welcome">Welcome to CarSUSHOP! Please login.</p>
+
+            <div class="containerlogin">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+
+            <div class="container-login-foot" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+
+         <!--= Cart Overlay=-->
+        <div id="id011" class="modal1">
+  
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imglogocontainer">
+              <span onclick="document.getElementById('id011').style.display='none'" class="close" title="Close Modal1">&times;</span>
+              <img src="./images/Logo.png" alt="Avatar" class="avatar">
+            </div>
+             <p id="welcome">CART HERE!.</p>
+
+            <div class="containerlogin">
+            </div>
+
+            <div class="container-login-foot" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id011').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+          </form>
+        </div>
+
+        <!--============home-slider==-->
+        <div id="slider">
+            <ul class="bxslider">
+                <li><img src="images/img1.jpg"></li>
+                <li><img src="images/img2.jpg"></li>
+                <li><img src="images/img3.jpg"></li>
+            </ul>
+        </div>
+       <!----=====category boxes===----->
+        <div class="container">
+            <div id="heading-block">
+                <h2>Category</h2>
+            </div>
+            <!---1st catbox--->
+            <a href="#">
+                <div class="catbox">
+                    <img src="images/cat1.jpg" alt="Men-fashion">
+                    <span>Shirts</span>
+                </div>
+            </a>
+            <!---2nd catbox--->
+            <a href="#">
+                <div class="catbox">
+                    <img src="images/cat2.jpg" alt="Men-fashion">
+                    <span>School Supplies</span>
+                </div>
+            </a>
+            <!---third catbox--->
+            <a href="#">
+                <div class="catbox">
+                    <img src="images/cat3.jpg" alt="Men-fashion">
+                    <span>Bags</span>
+                </div>
+            </a>
+            <!---fourth catbox--->
+            <a href="#">
+                <div class="catbox">
+                    <img src="images/cat4.jpg" alt="Men-fashion">
+                    <span>Lanyards</span>
+                </div>
+            </a>
+            <!---fifth catbox--->
+            <a href="#">
+                <div class="catbox">
+                    <img src="images/cat5.jpg" alt="Men-fashion">
+                    <span>Books</span>
+                </div>
+            </a>
+            <!---HEADING OF CATEGORY-->
+            <div id="heading-block">
+                <h2>Products</h2>
+            </div>
+            <div class="prod-container">
+                <!--first product-->
+                <div class="prod-box">
+                    <img src="images/pro1.jpg" alt="man suit">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>DOTA 2 Pudge Shirt</p>
+                            <p style="color:#fff;font-weight:bold;">Price : Php 499.00</p>
+                            <input type="button" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+                <!--second product-->
+                <div class="prod-box">
+                    <img src="images/pro2.jpg" alt="man suit">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Juggernaut Mug</p>
+                            <p style="color:#fff;font-weight:bold;">Price : Php 99.00</p>
+                            <input type="button" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+                <!--third product-->
+                <div class="prod-box">
+                    <img src="images/pro3.jpg" alt="man suit">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>CEIT Shirt 2018</p>
+                            <p style="color:#fff;font-weight:bold;">Price : Php 299.00</p>
+                            <input type="button" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+                <!--fourth product-->
+                <div class="prod-box">
+                    <img src="images/pro4.jpg" alt="man suit">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Juggernaut Arcana</p>
+                            <p style="color:#fff;font-weight:bold;">Price : Php 1700.00</p>
+                            <input type="button" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+                <!--fifth product-->
+                <div class="prod-box">
+                    <img src="images/pro5.jpg" alt="man suit">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Nike Sneakers</p>
+                            <p style="color:#fff;font-weight:bold;">Price : Php 1999.00</p>
+                            <input type="button" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+                <!--first product-->
+                <div class="prod-box">
+                    <img src="images/pro6.jpg" alt="man suit">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Galaxy Shoes</p>
+                            <p style="color:#fff;font-weight:bold;">Price : Php 1200.00</p>
+                            <input type="button" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+                <!--first product-->
+                <div class="prod-box">
+                    <img src="images/pro7.jpg" alt="man suit">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Fuck You All Shirt</p>
+                            <p style="color:#fff;font-weight:bold;">Price : Php 299.00</p>
+                            <input type="button" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+                <!--first product-->
+                <div class="prod-box">
+                    <img src="images/pro8.jpg" alt="man suit">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Harry Potter and the Cursed Child</p>
+                            <p style="color:#fff;font-weight:bold;">Price : Php 1500.00</p>
+                            <input type="button" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+                <!--first product-->
+                <div class="prod-box">
+                    <img src="images/pro9.jpg" alt="man suit">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Fifty Shades Book</p>
+                            <p style="color:#fff;font-weight:bold;">Price : Php 2500.00</p>
+                            <input type="button" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+                <!--first product-->
+                <div class="prod-box">
+                    <img src="images/pro10.jpg" alt="man suit">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Ladies jacket</p>
+                            <p style="color:#fff;font-weight:bold;">Price : Php1500</p>
+                            <input type="button" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div id="heading-block">
+                    <h2>Offer</h2>
+                </div>
+                <!--offer-boxes-->
+                <div class="offer">
+                    <a href="#"><img src="images/offer1.JPG"></a>
+                </div>
+                <div class="offer">
+                    <a href="#"><img src="images/offer2.JPG"></a>
+                </div>
+                <div class="offer">
+                    <a href="#"><img src="images/offer3.JPG"></a>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <div class="footer_sub">
+                    <h2>Our Story</h2>
+                 <p>The Official Online Shopping Store of Caraga State University. Website is underconstruction. For mo updates just <span><a href="#">Click Here!</a></span> </p>
+                </div>
+                <div class="footer_sub_2">
+                    <center>
+                        <h2>Important Links</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="NewArrivals.html">New arrivals</a></li>
+                            <li><a href="Deals.html">Deals</a></li>
+                            <li><a href="accessories.html">Accessories</a></li>
+                            <li><a href="Men-fashion.html">Men's Fashion</a></li>
+                            <li><a href="Women">Women's Fashion</a></li>
+                        </ul>
+                    </center>
+                </div>
+                <div class="footer_sub_2">
+                    <center>
+                        <h2>Social Links</h2>
+                        <ul>
+                            <li><a onclick="window.open('http://www.facebook.com/page')">Facebook</a></li>
+                            <li><a onclick="window.open('http://www.google.com/page')">Google+</a></li>
+                            <li><a onclick="window.open('http://www.youtube.com/page')">Youtube</a></li>
+                            <li><a onclick="window.open('http://www.twitter.com/page')">Twitter</a></li>
+                            <li><a onclick="window.open('http://www.Linkdin.com/page')">Linkdin</a></li>
+                            <li><a onclick="window.open('http://www.Blogger.com/page')">Blogger</a></li>
+                        </ul>
+                    </center>
+                </div>
+                <div class="footer_sub_3">
+                    <center>
+                        <h2>Subscribe Us</h2>
+                        <input type="text" name="subs" placeholder="Write your e-mail" class="subs">
+                        <input type="submit" name="submit_btn" value="Subscribe" class="sub_btn">
+                        <p class="sub_p">Enter your e-mail id for get notification by us.</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/my.js"></script>
+</body>
+
+</html>
